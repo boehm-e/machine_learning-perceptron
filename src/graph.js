@@ -54,7 +54,7 @@ class Graph {
 
   show() {
     var fs = require('fs')
-    , out = fs.createWriteStream('./out.png')
+    , out = fs.createWriteStream('../out.png')
     , stream = this.canvas.pngStream();
     stream.on('data', function(chunk){
       out.write(chunk);
@@ -62,7 +62,7 @@ class Graph {
 
     stream.on('end', function(){
       var exec = require('child_process').exec;
-      exec("eog out.png");
+      exec("eog ../out.png");
     });
   }
 
