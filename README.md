@@ -6,6 +6,7 @@ basic machine learning aglorithm that learns to classify if a point is on the to
 
 ### run
 ```
+npm i
 npm start
 ```
 
